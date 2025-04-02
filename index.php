@@ -37,12 +37,6 @@
     <div class="flex-container">
     <!-- END STEP 2.20 ADD FLEX CONTAINER -->
 
-    <!-- START STEP 2.22 ADD SIDEBAR -->
-
-    <?php get_sidebar(); ?>
-
-<!-- END STEP 2.22 ADD SIDEBAR -->
-    </div>
   
   <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php // NOTE IDs AND CLASSES ARE AUTOMATICALLY ADDED HERE ?>
@@ -65,7 +59,12 @@
 
   <!-- END WORDPRESS LOOP -->    
   </main>
+ <!-- START STEP 2.22 ADD SIDEBAR -->
 
+ <?php get_sidebar(); ?>
+
+<!-- END STEP 2.22 ADD SIDEBAR -->
+    </div>
    <!-- END STEP 2.8 ADD H1 AND WORDPRESS LOOP -->
   <!-- closing flex-container will go here -->
 

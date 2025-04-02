@@ -8,7 +8,6 @@
     
     <!-- START STEP 2.4 ADD HEADER.PHP CODE -->
     <!DOCTYPE html>
-    <html>
 
     <!-- START STEP 2.15 ADD HTML LANGUAGE ATTRIBUTES -->
 
@@ -32,13 +31,6 @@
         <?php // the viewport metatag is what makes a design responsive ?>
         
     </head>
-
-    <body>
-    <!-- START STEP 2.13 ADD SEARCH FORM -->
-
-    <?php get_search_form(); ?>
-
-    <!-- END STEP 2.13 ADD SEARCH FORM -->  
      
     <!-- START STEP 2.17 CUSTOMIZE BODY CLASS & OPEN -->
 
@@ -46,6 +38,12 @@
     <?php wp_body_open(); ?>
 
     <!-- END STEP 2.17 CUSTOMIZE BODY CLASS & OPEN -->
+
+    <!-- START STEP 2.13 ADD SEARCH FORM -->
+
+    <?php get_search_form(); ?>
+
+    <!-- END STEP 2.13 ADD SEARCH FORM -->  
 
     <header>
     <!-- START STEP 2.25 ADD CUSTOM LOGO -->
@@ -70,12 +68,7 @@
             <?php // This is the WP site tagline, not the meta description tag ?>
     </div>
         <nav>
-        </nav>
-    </header>
-    <!-- END STEP 2.4 ADD HEADER.PHP CODE -->
-    <?php  // END OF STEP 2.4 ?>
-
-<!-- START STEP 2.11 ADD THE MENU TO THE PAGE -->
+            <!-- START STEP 2.11 ADD THE MENU TO THE PAGE -->
         <?php 
         wp_nav_menu(array(
             'menu_class'	  	=> 'primary-menu',  // adds: class="primary-menu"
@@ -85,3 +78,8 @@
         ));
     ?>
     <!-- END STEP 2.11 ADD THE MENU TO THE PAGE -->
+        </nav>
+    </header>
+    <!-- END STEP 2.4 ADD HEADER.PHP CODE -->
+    <?php  // END OF STEP 2.4 ?>
+
